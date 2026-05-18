@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moshik Hershcovitch</title>
+
+  <style>
+    :root {
+      --text: #222;
+      --muted: #666;
+      --link: #0645ad;
+      --border: #e5e5e5;
+      --bg: #ffffff;
+      --soft-bg: #f7f7f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+    }
+
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 42px 28px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 34px;
+      align-items: start;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .avatar {
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      border: 1px solid #ddd;
+      display: block;
+      background: var(--soft-bg);
+    }
+
+    h1 {
+      font-size: 2.35rem;
+      margin: 0 0 6px 0;
+      font-weight: 650;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      font-size: 1.08rem;
+      margin: 4px 0;
+      color: #333;
+    }
+
+    .current {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-top: 5px;
+    }
+
+    .external-links {
+      font-weight: 500;
+    }
+    
+    .section-links {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+
+    nav {
+      margin-top: 18px;
+      font-size: 0.96rem;
+    }
+
+    nav .row {
+      margin-top: 6px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 34px;
+    }
+
+    .side-label {
+      color: #333;
+      font-weight: 650;
+      font-size: 1.05rem;
+      padding-top: 3px;
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 1.42rem;
+      margin: 0 0 16px 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      font-size: 1.08rem;
+      margin: 22px 0 8px 0;
+      font-weight: 650;
+    }
+
+    .work-title h3 a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    
+    .work-title h3 a:hover {
+      text-decoration: underline;
+    }
+
+    .work-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 22px 0 8px 0;
+    }
+    
+    .work-title h3 {
+      margin: 0;
+    }
+    
+    .zipnn-title img {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    
+    .work-subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+
+
+    p {
+      margin: 0 0 12px 0;
+    }
+
+    ul {
+      margin-top: 8px;
+      margin-bottom: 0;
+      padding-left: 22px;
+    }
+
+    .item {
+      margin-bottom: 30px;
+    }
+
+    .links {
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    .talk {
+      margin-bottom: 11px;
+    }
+
+    footer {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 28px 20px;
+      }
+
+      header {
+        display: block;
+      }
+
+      .avatar {
+        width: 105px;
+        height: 105px;
+        margin-bottom: 18px;
+      }
+
+      main {
+        display: block;
+      }
+
+      .side-label {
+        display: none;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    
+    <header>
+      <img class="avatar" src="profile_pic.jpg" alt="Moshik Hershcovitch">
+    
+      <div>
+        <h1>Moshik Hershcovitch</h1>
+        <div class="subtitle">Data Structures and Systems Researcher</div>
+        <div class="current">Researcher at a stealth startup working on next-generation blockchain infrastructure</div>
+    
+        <nav>
+          <div class="row external-links">
+            <a href="https://scholar.google.com/citations?user=BWNqGCQAAAAJ&hl=en">Google Scholar</a> |
+            <a href="https://www.linkedin.com/in/moshik-lanir-hershcovitch-3241105/">LinkedIn</a> |
+            <a href="https://github.com/moshik1">GitHub</a>
+          </div>
+    
+          <div class="row section-links">
+            <a href="#about">About</a> |
+            <a href="#work">Selected Work</a> |
+            <a href="#patents">Patents</a> |
+            <a href="#talks">Talks</a> |
+            <a href="#service">Academic Service</a> |
+            <a href="#publications">Publications</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="side-label">About</div>
+      <section id="about">
+        <h2>About</h2>
+
+        <p>I am a researcher and inventor specializing in data structures and systems.</p>
+
+        <p>My work focuses on designing workload-specific data structures and infrastructure systems for storage, indexing, compression, AI infrastructure, blockchain, and memory systems.</p>
+
+        <p>I combine a background in data structures theory with broad systems experience across storage, hardware, persistent memory, and large-scale infrastructure.</p>
+
+        <p>I led the research, design, and development of ZipNN, a lossless compression algorithm for AI models.</p>
+
+        <p>I received my PhD from Tel Aviv University, with a thesis titled “Fewer, Safer Bits: Improved Methods for Massive Storage.”</p>
+      </section>
+
+      <div class="side-label">Selected Work</div>
+      <section id="work">
+        <h2>Selected Work</h2>
+
+
+        <div class="item">
+          <div class="work-title zipnn-title">
+            <a href="https://github.com/zipnn/zipnn">
+              <img src="ZipNN-logo-v2.png" alt="ZipNN logo">
+            </a>
+            <div>
+              <h3>
+                <a href="https://github.com/zipnn/zipnn">ZipNN</a>
+              </h3>
+              <div class="work-subtitle">Lossless Compression for AI Models</div>
+            </div>
+          </div>
+        
+           <p>ZipNN is a lossless compression algorithm for AI models, designed to reduce storage and bandwidth costs at scale without affecting accuracy.</p>
+
+          <p>It achieves substantial size reduction, including around 33% on BF16 AI models, while outperforming standard compression approaches in both compression ratio and speed. ZipNN also supports high-throughput operation, reaching decompression speeds of up to 80GB/s.</p>
+
+          <p>This work was featured by IBM Research and developed in collaboration with MIT, Boston University, Dartmouth College, and Tel Aviv University.</p>
+
+          <p>I led the research, design, and development of the algorithm and its open-source implementation.</p>
+
+          <p class="links">Links: <a href="https://github.com/zipnn/zipnn">ZipNN GitHub</a> | <a href="https://arxiv.org/pdf/2411.05239">Paper</a> | <a href="https://research.ibm.com/blog/Zip-NN-AI-compression">IBM Research blog</a></p>
+        </div>
+
+        <div class="item">
+          <h3>Storage and Indexing</h3>
+
+          <p>I focus on designing efficient indexing and storage methods for large-scale data systems.</p>
+
+          <p>I led the development of elastic indexing techniques (EDBT 2022), enabling dynamic adaptation of index memory usage under varying data workloads while preserving performance.</p>
+
+          <p>I contributed to data reduction and storage management techniques (FAST 2019, ACM TOS 2019), including methods for estimating effective storage capacity in deduplicated systems, which were integrated into IBM storage systems.</p>
+
+          <p>My more recent work focuses on modern storage architectures, including multi-cloud object storage and cloud bursting (VLDB 2025, with UC Berkeley; HotStorage 2025, with the Technion), with a focus on cost-aware data placement and performance tradeoffs in distributed environments.</p>
+
+          <p class="links">Links: <a href="https://openproceedings.org/2022/conf/edbt/paper-74.pdf">EDBT 2022</a> | <a href="https://www.usenix.org/system/files/fast19-harnik.pdf">FAST 2019</a> | <a href="https://dl.acm.org/doi/pdf/10.1145/3369737">TOS 2019</a> | <a href="https://www.vldb.org/pvldb/vol18/p2084-liu.pdf">VLDB 2025</a> | <a href="https://dants.github.io/papers/2025-hotstroage-bursting.pdf">HotStorage 2025</a></p>
+        </div>
+
+        <div class="item">
+          <h3>Persistent Memory and Hardware-Aware Systems</h3>
+
+          <p>My work explores how emerging memory technologies can reshape storage and data systems, from persistent memory to CXL-based architectures.</p>
+
+          <p>I contributed to MCAS, a key-value store designed from the ground up for persistent memory, developed using early Intel Optane persistent-memory hardware in collaboration with IBM Research Almaden and academic partners.</p>
+
+          <p>Building on this work, I contributed to PyMM, a research library that exposes persistent memory through familiar Python data-science abstractions such as NumPy arrays and PyTorch tensors. The project included an open-source implementation and supported collaborations on persistent-memory acceleration for machine learning and data-intensive workloads.</p>
+
+          <p>As the memory landscape moved beyond Optane, my work extended to CXL-based architectures, including cache-line delta techniques for high-frequency VM snapshotting.</p>
+
+          <p>My background also includes over a decade of hardware research and ASIC design, with patented work on IP lookup and hardware-based data structures.</p>
+
+          <p>This background continues to inform my work across the software-hardware boundary, including storage, compression, AI infrastructure, and emerging memory systems.</p>
+
+          <p class="links">Links: <a href="https://arxiv.org/pdf/2103.00007">MCAS</a> | <a href="https://dl.acm.org/doi/10.1145/3477113.3487266">PyMM paper</a> | <a href="https://github.com/IBM/pymm">PyMM GitHub</a> | <a href="https://dl.acm.org/doi/pdf/10.1145/3542929.3563481">CXL Snapshotting</a></p>
+        </div>
+
+        <div class="item">
+          <h3>Data Structure Attacks</h3>
+
+          <p>I co-led research on identifying and exploiting side-channel vulnerabilities in modern data systems, focusing on how internal data structure behavior can leak sensitive information.</p>
+
+          <p>In SIGMOD 2023, we showed how row-level security (RLS) mechanisms in relational databases can leak protected data through query execution time, enabling attackers to infer the existence and frequency of hidden data.</p>
+
+          <p>In USENIX ATC 2023, we demonstrated “prefix siphoning,” a timing attack on LSM-tree-based key-value stores, exploiting range filters to recover prefixes and, in some cases, full keys.</p>
+
+          <p class="links">Links: <a href="https://dl.acm.org/doi/pdf/10.1145/3588943">SIGMOD 2023</a> | <a href="https://www.usenix.org/system/files/atc23-kaufman.pdf">USENIX ATC 2023</a></p>
+        </div>
+
+
+        <div class="item">
+          <h3>Data Structures Theory</h3>
+
+          <p>My research includes contributions to the theory of data structures, with a focus on indexing and efficient lookup, including predecessor search and longest prefix queries.</p>
+
+          <p>This work includes publications in leading theory venues, including Algorithmica and Information and Computation, as well as MFCS, where the work received a Best Paper Award.</p>
+
+          <p class="links">Links:
+            <a href="https://arxiv.org/pdf/1306.3772">MFCS 2013</a> |
+            <a href="https://hpi.de/friedrich/docs/publications/2015/InCo.pdf">Information and Computation 2015</a> |
+            <a href="https://www.math.tau.ac.il/~haimk/papers/lpm.pdf">SWAT 2008</a> |
+            <a href="https://link.springer.com/article/10.1007/s00453-011-9594-2">Algorithmica 2013</a>
+          </p>
+        </div>
+      </section>
+
+   
+      <div class="side-label">Patents</div>
+      <section id="patents">
+        <h2>Patents</h2>
+
+        <p>I am an inventor on over 10 patents across several areas, including:</p>
+
+        <ul>
+          <li>Storage systems</li>
+          <li>Persistent memory</li>
+          <li>CXL and disaggregated memory</li>
+          <li>Security</li>
+          <li>Compression</li>
+          <li>Hardware-based data structures and IP lookup</li>
+        </ul>
+      </section>
+
+      <div class="side-label">Talks</div>
+      <section id="talks">
+        <h2>Selected Talks and Presentations</h2>
+
+        <p class="talk">MIT CSAIL Seminar, Oct 2024 — ZipNN: Lossless Compression for AI Models</p>
+
+        <p class="talk">Dartmouth College, LISP Lab Seminar, Aug 2024 — ZipNN: Lossless Compression for AI Models</p>
+
+        <p class="talk">USENIX ATC 2023 — Prefix Siphoning: Exploiting LSM-Tree Range Filters for Information Disclosure <a href="https://youtu.be/NgVVmu39u7g?is=7awqyXoXvre_CKS1">[Video]</a></p>
+
+        <p class="talk">EDBT 2022 — Elastic Indexing <a href="https://youtu.be/FrgtiXNu_8U?is=nMPlrquAPbQDTV3M">[Video]</a></p>
+
+        <p class="talk">Hasso Plattner Institute, Algorithm Engineering Seminar, 2021 — Persistent Memory and Data Systems</p>
+      </section>
+
+      <div class="side-label">Academic Service</div>
+      <section id="service">
+        <h2>Academic Service</h2>
+
+        <p>General Chair, SYSTOR 2019</p>
+        <p>Publicity Chair, SYSTOR 2017</p>
+      </section>
+
+      <div class="side-label">Publications</div>
+      <section id="publications">
+        <h2>Publications</h2>
+
+        <p>Selected publications are highlighted above. For a complete list, see my <a href="https://scholar.google.com/citations?user=BWNqGCQAAAAJ&hl=en">Google Scholar profile</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="https://github.com/moshik1">GitHub</a> |
+        <a href="https://www.linkedin.com/in/moshik-lanir-hershcovitch-3241105/">LinkedIn</a> |
+        <a href="https://scholar.google.com/citations?user=BWNqGCQAAAAJ&hl=en">Google Scholar</a> |
+        <a href="https://github.com/zipnn/zipnn">ZipNN GitHub</a> |
+        <a href="https://research.ibm.com/blog/Zip-NN-AI-compression">IBM Research blog on ZipNN</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
